@@ -5,9 +5,9 @@ function getClock() {
     const hours = String(date.getHours()).padStart(2, "0");
     const minute = String(date.getMinutes()).padStart(2, "0");
     const second = String(date.getSeconds()).padStart(2, "0");
-    clock.innerText = `${hours}:${minute}:${second}`;
+    clock.innerText = `${hours}:${minute}`;
     
 }
 
 getClock();
-setInterval(getClock, 1000);
+setInterval(getClock, 60000);
