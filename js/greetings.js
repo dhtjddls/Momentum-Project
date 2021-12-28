@@ -18,7 +18,7 @@ function onLoginSubmit(event) { // html submit 함수의 새로고침을 막고,
 
 function paintGreeting(username) { // 인사말 표시 함수, greeting html의 hidden 스타일을 제거 후 인사말 표시
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `Hello ${username}!`;
 }
 
 
