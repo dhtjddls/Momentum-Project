@@ -37,8 +37,12 @@ body {
 }
 #weather {
     text-align: right;
+    font-size: 17px;
+    text-decoration: solid;
 }
 .content {
+    margin-left: 350px;
+    margin-right: 350px;
     padding-bottom: 30px;
     background-color: rgb(255, 255, 255, 0.6);
     
@@ -70,4 +74,12 @@ button{
     border: none;
     padding: 0;
     background-color: transparent;
+}
+.city {
+    padding-right: 20px;
+}
+#quote{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }

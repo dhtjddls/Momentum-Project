@@ -8,13 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Momentum App</title>
 </head>
 <body>
     <header>
-        <div id="weather">
-            <span></span>
-            <span></span>
+
+        <div id="weather">      
+            <span><i class="fas fa-snowflake"></i></span>        
+            <span class="temperat"></span>
+            <span class="city"></span>
         </div>
         <div class="content">
         <h2 id="clock">00:00:00</h2>
@@ -30,10 +33,11 @@
                 </form>
                 <ul id="todo-list"></ul>
             </article>
+            <br>
             <article>
                 <div id="quote">
                     <strong>
-                        <span></span>
+                    <span></span>
                     <br>
                     <span></span>
                     </strong>

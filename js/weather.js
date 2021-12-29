@@ -8,14 +8,16 @@ function onGeoOk(position){
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            const weather = document.querySelector("#weather span:first-child");
-            const city = document.querySelector("#weather span:last-child");
+            const weather = document.querySelector(".temperat");
+            const city = document.querySelector(".city");
             city.innerText = data.name;
             weather.innerText = `${data.weather[0].main} / ${data.main.temp}`});
 }
 function onGeoError(error){
     alert("위치를 찾을 수 없습니다.")
 }
+
+
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 
